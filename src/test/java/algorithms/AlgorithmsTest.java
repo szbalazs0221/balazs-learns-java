@@ -1,7 +1,6 @@
 package test.java.algorithms;
 
-import static main.java.algorithms.Algorithms.getLongestWord;
-import static main.java.algorithms.Algorithms.reverseWord;
+import static main.java.algorithms.Algorithms.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
@@ -26,4 +25,21 @@ public class AlgorithmsTest {
     public void reverseWordReversesWord() {
         assertEquals("dlroW olleH", reverseWord("Hello World"));
     }
+
+    @Test
+    public void FactorialCalculationCorrect() {
+        assertEquals(120, factorial(5));
+    }
+
+    @Test
+    public void FactorialOfZeroIsOne() {
+        assertEquals(1, factorial(0));
+    }
+
+    @Test
+    public void FactorialOfOneIsOne() {
+        assertEquals(1, factorial(1));
+    }
+
+
 }
