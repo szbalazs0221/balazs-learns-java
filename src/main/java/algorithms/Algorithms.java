@@ -17,4 +17,15 @@ public class Algorithms {
 
     }
 
+    public static String reverseWord(String word) {
+
+        StringBuilder reversedWord = new StringBuilder();
+        char[] letters = word.toCharArray();
+
+        for (int i = letters.length - 1; i >= 0; i--) {
+            reversedWord.append(letters[i]);
+        }
+        return reversedWord.toString();
+    }
+
 }
